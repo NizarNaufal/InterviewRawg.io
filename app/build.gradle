@@ -39,6 +39,8 @@ android {
 
 dependencies {
     implementation project(":core")
+    implementation 'androidx.room:room-runtime:2.2.6'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    annotationProcessor 'androidx.room:room-compiler:2.2.6'
     implementation "androidx.navigation:navigation-dynamic-features-fragment:$navigation_version"
 }
