@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/notificationLoadingSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:shimmer_auto_start="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_small_game_loading" />
+
+                <include layout="@layout/item_small_game_loading" />
+
+                <include layout="@layout/item_small_game_loading" />
+
+                <include layout="@layout/item_small_game_loading" />
+
+                <include layout="@layout/item_small_game_loading" />
+
+                <include layout="@layout/item_small_game_loading" />
+
+                <include layout="@layout/item_small_game_loading" />
+
+                <include layout="@layout/item_small_game_loading" />
+
+                <include layout="@layout/item_small_game_loading" />
+
+                <include layout="@layout/item_small_game_loading" />
+
+                <include layout="@layout/item_small_game_loading" />
+
+                <include layout="@layout/item_small_game_loading" />
+            </LinearLayout>
+        </ScrollView>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <include
+        android:id="@+id/notificationErrorSearch"
+        layout="@layout/error_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/notificationForSearch"
+        layout="@layout/search_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHorizontalSearchGame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_small_game" />
+</FrameLayout>

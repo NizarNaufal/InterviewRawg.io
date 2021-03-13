@@ -1,0 +1,11 @@
+<resources>
+    <string name="ratingNumber">%1$.1f \u2605</string>
+    <string name="suggested_byNumber">%1$d \u2764</string>
+    <string name="playtimeNumber">%1$d hours</string>
+    <string name="game_title">Game Title</string>
+    <string name="release_date">Release Date</string>
+    <string name="playtime">Playtime</string>
+    <string name="rating">Rating</string>
+    <string name="suggested_by">Suggested</string>
+    <string name="image_background_game">Image Background Game</string>
+</resources>

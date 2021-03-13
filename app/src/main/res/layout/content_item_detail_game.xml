@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/txtGameTitleDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="@string/game_title"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFavoriteDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:theme="@style/button"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGameTitleDetail" />
+
+    <TextView
+        android:id="@+id/descriptionDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="@string/game_description"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonFavoriteDetail" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="@string/game_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionDetail" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/releaseDateDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/release_date"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/txtReleaseDateDetail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineDetail"
+        app:layout_constraintTop_toBottomOf="@id/txtDescription" />
+
+    <TextView
+        android:id="@+id/txtReleaseDateDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="@string/release_date"
+        app:layout_constraintBottom_toBottomOf="@id/suggestionDetail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineDetail"
+        app:layout_constraintTop_toBottomOf="@id/releaseDateDetail" />
+
+    <TextView
+        android:id="@+id/playTimeDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/playtime"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/txtPlayTimeDetail"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineDetail"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDescription" />
+
+    <TextView
+        android:id="@+id/txtPlayTimeDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="@string/playtime"
+        app:layout_constraintBottom_toTopOf="@id/ratingDetail"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineDetail"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playTimeDetail" />
+
+    <TextView
+        android:id="@+id/suggestionDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/suggested_by"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/txtSuggestionDetail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineDetail"
+        app:layout_constraintTop_toBottomOf="@id/txtReleaseDateDetail" />
+
+    <TextView
+        android:id="@+id/txtSuggestionDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="@string/suggested_by"
+        app:layout_constraintBottom_toTopOf="@id/websiteDetail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineDetail"
+        app:layout_constraintTop_toBottomOf="@id/suggestionDetail" />
+
+    <TextView
+        android:id="@+id/ratingDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/rating"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/txtRatingDetail"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineDetail"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPlayTimeDetail" />
+
+    <TextView
+        android:id="@+id/txtRatingDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="@string/rating"
+        app:layout_constraintBottom_toTopOf="@id/reviewDetail"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineDetail"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ratingDetail" />
+
+    <TextView
+        android:id="@+id/websiteDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/website"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/txtWebsiteDetail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineDetail"
+        app:layout_constraintTop_toBottomOf="@id/txtSuggestionDetail" />
+
+    <TextView
+        android:id="@+id/txtWebsiteDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/website"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineDetail"
+        app:layout_constraintTop_toBottomOf="@id/websiteDetail" />
+
+    <TextView
+        android:id="@+id/reviewDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/review"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/txtReviewDetail"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineDetail"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtRatingDetail" />
+
+    <TextView
+        android:id="@+id/txtReviewDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="@string/review"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineDetail"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reviewDetail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

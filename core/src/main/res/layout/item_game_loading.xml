@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:theme="@style/cardHorizontal">
+
+    <ImageView
+        android:id="@+id/backgroundImageLoading"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black_200"
+        android:contentDescription="@string/image_background_game"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/contentItemGameLoading"
+        app:layout_constraintDimensionRatio="H,16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentItemGameLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backgroundImageLoading">
+
+        <TextView
+            android:id="@+id/txtGameTitleLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_200"
+            android:paddingBottom="15dp"
+            android:text="@string/game_title"
+            android:textAlignment="center"
+            android:textColor="@color/black_200"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/calendarImageLoading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/calendarImageLoading"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/black_200"
+            android:contentDescription="@string/release_date"
+            android:paddingBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@id/txtReleaseDateLoading"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/guidelineLoading"
+            app:layout_constraintTop_toBottomOf="@id/txtGameTitleLoading" />
+
+        <TextView
+            android:id="@+id/txtReleaseDateLoading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black_200"
+            android:gravity="center"
+            android:text="@string/release_date"
+            android:textColor="@color/black_200"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/guidelineLoading"
+            app:layout_constraintTop_toBottomOf="@id/calendarImageLoading" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <View
+            android:id="@+id/timeImageLoading"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/black_200"
+            android:paddingBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@id/txtPlaytimeLoading"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineLoading"
+            app:layout_constraintRight_toRightOf="@id/guideline1Loading"
+            app:layout_constraintTop_toBottomOf="@id/txtGameTitleLoading" />
+
+        <TextView
+            android:id="@+id/txtPlaytimeLoading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black_200"
+            android:gravity="center"
+            android:text="@string/playtime"
+            android:textColor="@color/black_200"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineLoading"
+            app:layout_constraintRight_toRightOf="@id/guideline1Loading"
+            app:layout_constraintTop_toBottomOf="@id/timeImageLoading" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1Loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.66" />
+
+        <TextView
+            android:id="@+id/txtRatingLoading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black_200"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="@string/rating"
+            android:textColor="@color/black_200"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@id/txtSuggestedLoading"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline1Loading"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtGameTitleLoading" />
+
+        <TextView
+            android:id="@+id/txtSuggestedLoading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black_200"
+            android:gravity="center"
+            android:text="@string/suggested_by"
+            android:textColor="@color/black_200"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/guideline1Loading"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtRatingLoading" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">InterviewRawg.io</string>
+    <string name="app_name">Rawg Api</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home Rawg</string>
+    <string name="title_search">Search Rawg</string>
+    <string name="title_favorite">Favorite Rawg</string>
+    <string name="title_activity_detail">Detail Games</string>
+    <string name="there_is_an_error_here">There is an error here</string>
+    <string name="startLoading">Please wait…</string>
+    <string name="startSearch">You may search in this page.</string>
+    <string name="searchHint">Search Here</string>
+    <string name="startFavorite">This is empty.. Maybe you start adding your favorite game..</string>
+    <string name="removeFavoriteMessage">You just removed %1$s from your Favorite</string>
+    <string name="ratingNumberDetail">%1$.1f / %2$d</string>
+    <string name="suggested_byNumberDetail">%1$d People</string>
+    <string name="add_favorite">★ Add this to your favorite</string>
+    <string name="added_favorite">Well done. This is your favorite game</string>
+    <string name="game_description">Game Description</string>
+    <string name="website">Website</string>
+    <string name="review">Review</string>
+    <string name="reviewNumber">%1$d Reviewers</string>
 </resources>
